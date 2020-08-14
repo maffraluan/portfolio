@@ -1,0 +1,97 @@
+.main-content {
+    width: 100%;
+    height: 100%;
+}
+
+.text-area {
+    margin: 4rem auto;
+    display: flex;
+    width: auto;
+    height: auto;
+    justify-content: center;
+}
+
+@media (max-width: 420px) {
+    .text-area-align {
+        display: flex;
+        box-sizing: content-box;
+        padding: 2rem;
+        width: auto;
+    }
+    .container {
+        width: 600px;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+.main-repo {
+    display: flex;
+    flex-direction: row;
+}
+
+.repos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 992px,) {
+    .grid-container {
+        width: 400px;
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+      }
+}
+
+@media (max-width: 720px) {
+    .grid-container {
+        width: 80%;
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+    }
+}
+
+li {
+    min-width: 30vw;
+    margin: 3.2rem;
+    list-style: none;
+}
+
+.btn {
+
+}
+
+.btn a {
+    width: 60%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border: none;
+    text-decoration: none;
+}
+
+.btn button {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    font: 500 1.6rem Roboto;
+    color: var(--color-text-dark);
+    border-color: transparent;
+    cursor: pointer;
+    outline: none;
+    background: var(--color-background);
+}
+
+.btn button:hover {
+    box-shadow: 0 5px 5px 0 rgba(118, 116, 116, 0), 0 10px 20px 0 rgba(121, 121, 121, 0.19);
+}

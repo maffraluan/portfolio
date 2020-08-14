@@ -1,0 +1,66 @@
+.navbar-768 {
+    display: initial;
+}
+
+.main-nav {
+    display: flex;
+    width: auto;
+    min-width: 100vw;
+    height: 6rem;
+    flex-direction: row;
+    background: var(--color-navbar);
+    justify-content: space-between;
+}
+
+.main-nav .nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.main-nav .nav-links a {
+    padding: 3.2rem;
+    color: var(--color-text-light);
+    font: 300 1.8rem Roboto;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.main-nav .nav-links a:hover {
+    opacity: 0.6;
+}
+
+.main-nav .network-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main-nav .network-links a {
+    padding: 3.2rem;
+    color: var(--color-text-light);
+    font: 100 1.8rem Roboto;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.main-nav .network-links a {
+    padding: 3.2rem;
+    color: var(--color-text-light);
+    font: 300 1.8rem Roboto;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.main-nav .network-links a:hover {
+    opacity: 0.6;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-768 {
+        display: none;
+    }
+}

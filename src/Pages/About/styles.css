@@ -1,0 +1,7 @@
+.about-info {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}

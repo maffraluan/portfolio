@@ -1,0 +1,10 @@
+.divider {
+    margin: 2rem;
+}
+
+@media (max-width: 420px) {
+    .text-area-align {
+        display: flex;
+        flex-direction: column;
+    }
+}
