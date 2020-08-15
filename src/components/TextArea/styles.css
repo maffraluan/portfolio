@@ -44,6 +44,13 @@ h2 {
     font: 700 2.8rem Roboto;
     color: var(--color-text-dark)
 }
+.fork-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+.fork-icon img {
+    width: 24px;
+}
 
 .job-title {
     display: block;
@@ -52,7 +59,7 @@ h2 {
 }
 
 .techs-title {
-    display: lock;
+    display: block;
     align-items: center;
     padding: 0.5rem 0;
 }

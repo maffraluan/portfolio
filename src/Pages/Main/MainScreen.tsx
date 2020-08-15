@@ -41,6 +41,7 @@ const MainScreen: React.FunctionComponent<IMainScreenProps> = () => {
                     {repo.map((item: any, index: number) => (
                         <li className="grid-container" key={index}>
                             <TextArea
+                                forkIcon={item.fork}
                                 repoName="Repo name:"
                                 languages="Languages:"
                                 description="Description:"
