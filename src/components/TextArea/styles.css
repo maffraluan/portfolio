@@ -23,6 +23,23 @@ p {
     color: var(--color-text-dark);
 }
 
+@media (max-width: 480px) {
+    .job-title h2, p {
+        text-align: center;
+        letter-spacing: normal;
+    }
+
+    .techs-title h2, p {
+        text-align: center;
+        letter-spacing: 0;
+    }
+
+    .responsabilities-title h2, p {
+        text-align: center;
+        letter-spacing: normal;
+    }
+}
+
 h2 {
     font: 700 2.8rem Roboto;
     color: var(--color-text-dark)

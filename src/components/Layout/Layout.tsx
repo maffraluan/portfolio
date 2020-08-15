@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from '../Navbar/Navbar'
-import NavbarVertical from '../NavbarHorizontal/NavbarVertical'
+import NavbarVertical from '../NavbarVertical/NavbarVertical'
 
 interface ILayoutProps {
 }
