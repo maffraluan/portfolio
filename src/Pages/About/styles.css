@@ -1,7 +1,6 @@
-.about-info {
-    display: flex;
-    width: auto;
-    height: auto;
-    align-items: center;
-    justify-content: center;
+.max-width {
+    max-width: 70vw;
+}
+.min-height {
+    min-height: 30vh;
 }

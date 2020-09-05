@@ -31,15 +31,15 @@ const Navbar: React.FC = () => {
                 <div className="network-links">
                     <a href={github} target="_blank" rel="noopener noreferrer">
                         Github
-                </a>
+                    </a>
 
                     <a href={linkedin} target="_blank" rel="noopener noreferrer">
                         LinkedIn
-                </a>
+                    </a>
                 </div>
             </div>
         </nav>
     )
-}
+};
 
-export default Navbar
+export default Navbar;

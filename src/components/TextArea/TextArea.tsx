@@ -1,15 +1,15 @@
 import React from 'react'
-
-import icon from '../../assets/icons/fork-icon.png'
+import icon from '../../assets/icons/icon.svg'
 import './styles.css'
 
-interface textAreaProps {
+type textAreaProps = {
     title?: string,
     tech?: string,
     responsability?: string,
     jobTitle?: string,
     techsTitle?: string,
     respTitle?: string,
+    fixWidth?: object,
 
     // repo types 
     forkIcon?: any;
@@ -19,15 +19,15 @@ interface textAreaProps {
     returnRepo?: string,
     returnDescription?: string,
     returnLanguages?: string,
-}
+};
 
 const TextArea: React.FunctionComponent<textAreaProps> = ({
     title, tech, responsability, jobTitle, techsTitle, respTitle,
     forkIcon, repoName, description, languages, returnRepo, returnDescription,
-    returnLanguages, children }) => {
+    returnLanguages, fixWidth, children }) => {
 
     return (
-        <div className="container">
+        <div className="container" style={fixWidth}>
             <div className="fork-icon">
                     <img src={forkIcon && icon } alt="" />
                 </div>
@@ -48,6 +48,6 @@ const TextArea: React.FunctionComponent<textAreaProps> = ({
             {children}
         </div>
     )
-}
+};
 
-export default TextArea
+export default TextArea;

@@ -19,7 +19,6 @@
         width: auto;
     }
     .container {
-        width: 600px;
         display: grid;
         align-items: center;
         justify-content: center;

@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from 'react'
-
 import TextArea from '../../components/TextArea/TextArea'
-
-import './styles.css'
-import { fetchAll } from '../../services'
 import Layout from '../../components/Layout/Layout'
+import { fetchAll } from '../../services'
+import './styles.css'
 
-interface IMainScreenProps {
-}
+type IMainScreenProps = {}
 
-const MainScreen: React.FunctionComponent<IMainScreenProps> = () => {
+const MainScreen: React.FunctionComponent = () => {
     const [repo, setRepos] = useState<IMainScreenProps[]>([]);
 
     useEffect(() => {
@@ -25,6 +22,7 @@ const MainScreen: React.FunctionComponent<IMainScreenProps> = () => {
             <div className="text-area">
                 <div className="text-area-align">
                     <TextArea
+                        fixWidth={{ maxWidth: '70vw', minHeight: '30vh' }}
                         title="Last job at:"
                         tech="Main techs:"
                         responsability="Responsabilities"
@@ -61,6 +59,6 @@ const MainScreen: React.FunctionComponent<IMainScreenProps> = () => {
             </div>
         </Layout>
     )
-}
+};
 
 export default MainScreen;

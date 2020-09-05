@@ -1,13 +1,12 @@
 import React from 'react'
-
 import './styles.css'
 
-interface IAboutInfoProps {
-    age: number,
+type IAboutInfoProps = {
+    age: number 
 };
 
 const AboutInfo: React.FC<IAboutInfoProps> = ({
-     age, children
+    age
 }) => {
     return (
         <div className="content-info">
@@ -16,11 +15,10 @@ const AboutInfo: React.FC<IAboutInfoProps> = ({
             </div>
 
             <div className="paragraph-text">
-                <p>Hello there! Sou uma pessoa introvertido e extrovertido dependendo das situações. Gosto de ouvir conselhos
-                    e dar conselhos quando necessário! Ouço muitas mas muitas músicas para melhorar os meus dias.
-                    Gosto muito de aprender programação e peço ajuda quando necessário.
-                    Comprei um curso onde estou estudando Nodejs puro e express. ORM, GraphQL, React, React Native e Typescript.
-                    Onde eu consiga melhorar meus conhecimentos de frontend e implementar com backend. 
+                <p>Hello there! Gosto muito de aprender programação, ajudo e peço ajuda quando necessário,
+                gosto de trabalhar em equipe. Estou sempre me atualizando e em busca de novos desafios.
+                Comprei um curso onde estou estudando Nodejs puro e express. ORM, GraphQL, AWS, React, React Native e Typescript.
+                Onde eu consiga melhorar meus conhecimentos de frontend e implementar com backend.
                 </p>
             </div>
 
@@ -44,7 +42,8 @@ const AboutInfo: React.FC<IAboutInfoProps> = ({
                     <h2>Education:</h2>
                     <strong>
                         Estudei 2 modúlos em Técnico em Desenvolvimento de Sistemas pela ETEC.
-                        Onde pude ter contato com PHP e C# WebForm. Mas deixei o curso, pelo fato das techs ensinadas não eram o que eu queria.
+                        Onde pude ter contato com PHP e C# WebForm.
+                        Mas deixei o curso, pelo fato das techs ensinadas não serem o que eu estava procurando.
                     </strong>
                 </div>
             </div>

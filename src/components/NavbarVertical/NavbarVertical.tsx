@@ -1,13 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-
 import './styles.css'
 
-interface INavbarVerticalProps {
+type INavbarVerticalProps = {
     isOpen?: boolean,
-}
+};
 
-const NavbarVertical: React.FC<INavbarVerticalProps> = ({ isOpen }) => {
+const NavbarVertical: React.FC<INavbarVerticalProps> = () => {
     const github = 'https://github.com/maffraluan';
     const linkedin = 'https://www.linkedin.com/in/maffraluan/';
 
@@ -43,6 +42,6 @@ const NavbarVertical: React.FC<INavbarVerticalProps> = ({ isOpen }) => {
             </aside>
         </>
     )
-}
+};
 
 export default NavbarVertical;

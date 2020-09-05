@@ -1,16 +1,15 @@
 import React from 'react'
 import TextArea from '../../components/TextArea/TextArea'
-
-import './styles.css'
 import Layout from '../../components/Layout/Layout'
+import './styles.css'
 
 const Experience: React.FC = () => {
-
     return (
         <Layout>
             <div className="text-area">
                 <div className="text-area-align">
                     <TextArea
+                        fixWidth={{ maxWidth: '70vw', minHeight: '30vh' }}
                         title="Last job at:"
                         tech="Main techs:"
                         responsability="Responsabilities"
@@ -21,6 +20,7 @@ const Experience: React.FC = () => {
                     />
                     <div className="divider"></div>
                     <TextArea
+                        fixWidth={{ maxWidth: '70vw', minHeight: '30vh'  }}
                         title="Jobed at:"
                         tech="Main techs:"
                         responsability="Responsabilities"
@@ -38,6 +38,6 @@ const Experience: React.FC = () => {
             </div>
         </Layout>
     )
-}
+};
 
 export default Experience;

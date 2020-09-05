@@ -2,11 +2,7 @@ import React from 'react'
 import Navbar from '../Navbar/Navbar'
 import NavbarVertical from '../NavbarVertical/NavbarVertical'
 
-interface ILayoutProps {
-}
-
-const Layout: React.FC<ILayoutProps> = ({ children }) => {
-
+const Layout: React.FC = ({ children }) => {
     return (
       <div className="main-content">
         <Navbar />
@@ -14,6 +10,6 @@ const Layout: React.FC<ILayoutProps> = ({ children }) => {
         {children}
       </div>
     )
-}
+};
 
 export default Layout;

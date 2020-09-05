@@ -1,11 +1,7 @@
 import React from 'react'
-
 import './styles.css'
 
-interface ITechInfoProps {
-}
-
-const TechInfo: React.FC<ITechInfoProps> = ({ children }) => {
+const TechInfo: React.FC = () => {
     return (
         <div className="content-tech">
             <div className="content-title-tech">
@@ -18,6 +14,6 @@ const TechInfo: React.FC<ITechInfoProps> = ({ children }) => {
             </div>
         </div>
     )
-}
+};
 
 export default TechInfo;

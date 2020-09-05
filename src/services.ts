@@ -11,6 +11,6 @@ const fetchAll = async (): Promise<IFetchProps[]> => {
     const json = await res.json();
 
     return json as IFetchProps[]
-}
+};
 
 export { fetchAll }
