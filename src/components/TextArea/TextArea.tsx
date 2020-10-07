@@ -1,5 +1,4 @@
 import React from 'react'
-import icon from '../../assets/icons/icon.svg'
 import './styles.css'
 
 type textAreaProps = {
