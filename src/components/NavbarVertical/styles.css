@@ -16,7 +16,6 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  background-color: red;
 }
 
 .nav-icon {
@@ -24,10 +23,10 @@
   position: absolute;
   left: 15px;
   top: 20px;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-  background-color: var(--color-navbar);
+  width: 30px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: var(--color-text-dark);
 }
 
 .nav-ul {
@@ -36,7 +35,7 @@
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-navbar);
+  background-color: var(--color-text-dark);
 }
 
 .button-content {
@@ -51,17 +50,17 @@ button {
   width: auto;
   max-width: 10rem;
   min-width: 16rem;
-  font: 500 2rem Roboto;
+  font: 500 1.8rem 'Raleway', sans-serif;
   color: var(--color-text-dark);
   padding: 0.6rem;
-  border-radius: 1.5rem;
+  border-radius: 5px;
   outline: none;
-  background: var(--color-background-light)
+  background: var(--color-text-light)
 }
 
 li a {
   display: block;
-  font: 300 1.8rem Roboto;
+  font: 500 1.8rem 'Raleway', sans-serif;
   color: var(--color-text-light);
   text-decoration: none;
 }

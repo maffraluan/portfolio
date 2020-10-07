@@ -19,44 +19,43 @@ const MainScreen: React.FunctionComponent = () => {
 
     return (
         <Layout>
-            <div className="text-area">
-                <div className="text-area-align">
+            <section className={"f-100 bg-dark-light"}>
+                <div>
                     <TextArea
-                        fixWidth={{ maxWidth: '70vw', minHeight: '30vh' }}
-                        title="Last job at:"
-                        tech="Main techs:"
-                        responsability="Responsabilities"
-                        jobTitle="Desenvolvedor Frontend at Agência Market Media/ 6 meses - Campinas - SP"
-                        techsTitle="Javascript, React, React Native e C#, Swagger, Bitbucket para versionamento de código."
-                        respTitle="Refatoração de código de Angular.js para React.FC, onde integrava com api feita em C# documentação de pequenos projetos.
-                        Responsável pela aplicação<Tablet> offline para uma empresa de Textile."
+                        title={"Job at"}
+                        job={"Junior Web Developer at Agência Market Media/ 7 months - Campinas - SP"}
+                        techsTitle={"Main techs"}
+                        tech={"Javascript, React, React Native, C#, Swagger & Bitbucket for version-control."}
+                        respTitle={"Main activities"}
+                        responsability={"Code refactoring from Angular.js to React.js (Function components). Fetching their own C# API. Documentation small projects. Responsible for created an offline application to a Textile global company."}
                     />
                 </div>
-            </div>
+            </section>
 
-            <div className="main-repo">
-                <div className="repos">
-                    {repo.map((item: any, index: number) => (
-                        <li className="grid-container" key={index}>
-                            <TextArea
-                                forkIcon={item.fork}
-                                repoName="Repo name:"
-                                languages="Languages:"
-                                description="Description:"
-                                returnRepo={item.name}
-                                returnLanguages={item.language}
-                                returnDescription={item.description}
-                            >
-                                <div className="btn">
-                                    <a href={item.html_url} target="_blank" rel="noopener noreferrer">
+            <section className={"f-box"}>
+                <div>
+                    <div className={"f-row"}>
+                        {repo.map((item: any, index: number) => (
+                            <li className={"repos bg-dark-light"} key={index}>
+                                <TextArea
+                                    repoName="Repo name:"
+                                    languages="Languages:"
+                                    description="Description:"
+                                    returnRepo={item.name}
+                                    returnLanguages={item.language}
+                                    returnDescription={item.description}
+                                >
+                                </TextArea>
+                                <div className={"btn-f"}>
+                                    <a className={"btn"}href={item.html_url} target="_blank" rel="noopener noreferrer">
                                         <button type="button">Go to repo</button>
                                     </a>
                                 </div>
-                            </TextArea>
-                        </li>
-                    ))}
+                            </li>
+                        ))}
+                    </div>
                 </div>
-            </div>
+            </section>
         </Layout>
     )
 };

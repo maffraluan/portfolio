@@ -5,9 +5,7 @@ type IAboutInfoProps = {
     age: number 
 };
 
-const AboutInfo: React.FC<IAboutInfoProps> = ({
-    age
-}) => {
+const AboutInfo: React.FC<IAboutInfoProps> = (props) => {
     return (
         <div className="content-info">
             <div className="title-name">
@@ -15,10 +13,8 @@ const AboutInfo: React.FC<IAboutInfoProps> = ({
             </div>
 
             <div className="paragraph-text">
-                <p>Hello there! Gosto muito de aprender programação, ajudo e peço ajuda quando necessário,
-                gosto de trabalhar em equipe. Estou sempre me atualizando e em busca de novos desafios.
-                Comprei um curso onde estou estudando Nodejs puro e express. ORM, GraphQL, AWS, React, React Native e Typescript.
-                Onde eu consiga melhorar meus conhecimentos de frontend e implementar com backend.
+                <p>A young man that uses the technology for your own favour. I love teammates. I'm doing my best for updating me everytime and my mind flow with new challenges.
+                Recently I bought a course where I'll learn new technicals in ReactJs, React Native, Typescript and NodeJs. To equilibrate my mind. And new technologies like GraphQL, AWS, Docker to complete my profile.
                 </p>
             </div>
 
@@ -30,7 +26,7 @@ const AboutInfo: React.FC<IAboutInfoProps> = ({
 
                 <div className="personal-info-row">
                     <h2>Age:</h2>
-                    <strong>{age}</strong>
+                    <strong>{props.age}</strong>
                 </div>
 
                 <div className="personal-info-row">
@@ -41,9 +37,7 @@ const AboutInfo: React.FC<IAboutInfoProps> = ({
                 <div className="personal-info-column">
                     <h2>Education:</h2>
                     <strong>
-                        Estudei 2 modúlos em Técnico em Desenvolvimento de Sistemas pela ETEC.
-                        Onde pude ter contato com PHP e C# WebForm.
-                        Mas deixei o curso, pelo fato das techs ensinadas não serem o que eu estava procurando.
+                        Current we were using C# webforms for desktop application. PHP, MySQL for web application. But I left the course after realize it wasn't what I looking for. Then I started to study new technologies on my own.
                     </strong>
                 </div>
             </div>

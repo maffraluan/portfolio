@@ -5,10 +5,8 @@
 .main-nav {
     display: flex;
     width: auto;
-    min-width: 100vw;
-    height: 6rem;
+    min-width: 100%;
     flex-direction: row;
-    background: var(--color-navbar);
     justify-content: space-between;
 }
 
@@ -19,8 +17,6 @@
 }
 .main-nav .nav-links a {
     padding: 3.2rem;
-    color: var(--color-text-light);
-    font: 300 1.8rem Roboto;
     text-decoration: none;
     cursor: pointer;
     transition: opacity 0.2s;
@@ -38,17 +34,6 @@
 
 .main-nav .network-links a {
     padding: 3.2rem;
-    color: var(--color-text-light);
-    font: 100 1.8rem Roboto;
-    text-decoration: none;
-    cursor: pointer;
-    transition: opacity 0.2s;
-}
-
-.main-nav .network-links a {
-    padding: 3.2rem;
-    color: var(--color-text-light);
-    font: 300 1.8rem Roboto;
     text-decoration: none;
     cursor: pointer;
     transition: opacity 0.2s;

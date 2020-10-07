@@ -3,23 +3,33 @@
     width: 100%;
     height: auto;
 }
+.content-info  h2 {
+    color: var(--color-text-dark);
+    font: 500 2.4em 'Raleway', sans-serif;
+    line-height: initial;
+}
+.content-info  p {
+    font: 400 2em 'Quicksand', sans-serif;
+    color: var(--color-text-dark);
+    margin-left: 5px;
+    line-height: initial;
+}
+.content-info strong {
+    font: 400 2em 'Quicksand', sans-serif;
+    color: var(--color-text-dark);
+    margin-left: 5px;
+    line-height: initial;
+}
+
 .title-name {
     display: flex;
     justify-content: center;
     padding: 1.9rem;
 }
-.title-name h2 {
-    font: 700 2.8rem Roboto;
-    color: var(--color-text-dark);
-}
 
 .paragraph-text {
     display: inline-block;
     padding: 1rem;
-}
-.paragraph-text p {
-    font: 300 1.8rem Roboto;
-    color: var(--color-text-dark);
 }
 
 .personal-info {
@@ -32,15 +42,6 @@
     align-items: center;
     padding: 0.6rem;
 }
-h2 {
-    font: 500 2.4rem Roboto;
-    color: var(--color-text-dark);
-    margin: 0 10px 0 0;
-}
-strong {
-    font: 300 1.8rem Roboto;
-    color: var(--color-text-dark);
-}
 
 .personal-info-column {
     display: flex;
@@ -48,7 +49,19 @@ strong {
     padding: 0.6rem;
 }
 
-@media (max-width: 450px) {
+/* Media queries */
+@media (max-width: 399px) {
+    .content-info  h2 {
+      font: 500 2em 'Raleway', sans-serif;
+    }
+    .content-info  p {
+      font: 500 1.6em 'Quicksand', sans-serif;
+      margin-top: 5px;
+    }
+    .content-info strong {
+      font: 500 1.6em 'Quicksand', sans-serif;
+      margin-top: 5px;
+    }
     .paragraph-text p {
         text-align: left;
         letter-spacing: 0px;
@@ -60,4 +73,17 @@ strong {
         display: inline-block;
         flex-direction: column;
     }
+}
+
+ @media (min-width: 400px) and (max-width: 530px) {
+    .content-info h2 {
+      font: 500 2.2em 'Raleway', sans-serif;
+  }
+    .content-info p {
+      font: 500 1.8em 'Quicksand', sans-serif;
+      margin-top: 5px;
+  }
+  .content-info strong {
+    font: 500 1.6em 'Quicksand', sans-serif;
+  }
 }

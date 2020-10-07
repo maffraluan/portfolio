@@ -6,13 +6,9 @@ import './styles.css'
 const About: React.FC = () => {
     return (
         <Layout>
-            <div className="text-area">
-                <div className="text-area-align">
-                    <div className="container max-width">
-                        <AboutInfo age={24} />
-                    </div>
-                </div>
-            </div>
+            <section className={"f-100 bg-dark-light"}>
+                <AboutInfo age={24} />
+            </section>
         </Layout>
     )
 };

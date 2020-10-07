@@ -6,36 +6,31 @@ import './styles.css'
 const Experience: React.FC = () => {
     return (
         <Layout>
-            <div className="text-area">
-                <div className="text-area-align">
+             <section className={"f-100 bg-dark-light"}>
+                <div>
                     <TextArea
-                        fixWidth={{ maxWidth: '70vw', minHeight: '30vh' }}
-                        title="Last job at:"
-                        tech="Main techs:"
-                        responsability="Responsabilities"
-                        jobTitle="Desenvolvedor Frontend at Agência Market Media/ 6 meses - Campinas - SP"
-                        techsTitle="Javascript, React, React Native e C#, Swagger, Bitbucket para versionamento de código."
-                        respTitle="Refatoração de código de Angular.js para React.FC, onde integrava com api feita em C# documentação de pequenos projetos.
-                        Responsável pela aplicação<Tablet> offline para uma empresa de Textile."
-                    />
-                    <div className="divider"></div>
-                    <TextArea
-                        fixWidth={{ maxWidth: '70vw', minHeight: '30vh'  }}
-                        title="Jobed at:"
-                        tech="Main techs:"
-                        responsability="Responsabilities"
-                        jobTitle="Desenvolvedor Júnior at Flex Frota/ 9 meses - Pirassununga - SP"
-                        techsTitle="Maker-Softwell Solutions, HTML5, CSS3, Javascript, Flutter, Figma"
-                        respTitle="
-                        Desenvolvimento Web e manutenção.
-                        Levantamento de requisitos.
-                        Criação e manutenção de ferramentas no sistema próprio em Gestão de Frota, feito em Maker.
-                        Desenhava os projetos no Figma para as aplicações mobile.
-                        Mobile em Flutter.
-                        Documentação de sistema."
+                        title={"Job at"}
+                        job={"Junior Web Developer at Agência Market Media/ 7 months - Campinas - SP"}
+                        techsTitle={"Main techs"}
+                        tech={"Javascript, React, React Native, C#, Swagger & Bitbucket for version-control."}
+                        respTitle={"Main activities"}
+                        responsability={"Code refactoring from Angular.js to React.js (Function components). Fetching their own C# API. Documentation small projects. Responsible for created an offline application to a Textile global company."}
                     />
                 </div>
-            </div>
+            </section>
+
+             <section className={"f-100 bg-dark-light"}>
+                <div>
+                    <TextArea
+                        title={"Job at"}
+                        job={"Junior Web Developer at FlexFrota/ 10 months - Pirassununga - SP"}
+                        techsTitle={"Main techs"}
+                        tech={"Maker-Softwell Solutions system, HTML5, CSS3, Javascript, Flutter, Figma."}
+                        respTitle={"Main activities"}
+                        responsability={"Web development and maintenance. Requirements gathering. Building and maintenance for new features for their own fleet management system. I drew some projects and features on Figma for their own mobile application. Documentation of features and deploy to Play Store and Apple Store."}
+                    />
+                </div>
+            </section>
         </Layout>
     )
 };

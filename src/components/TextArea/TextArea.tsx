@@ -4,15 +4,13 @@ import './styles.css'
 
 type textAreaProps = {
     title?: string,
-    tech?: string,
-    responsability?: string,
-    jobTitle?: string,
+    job?: string,
     techsTitle?: string,
+    tech?: string,
     respTitle?: string,
-    fixWidth?: object,
+    responsability?: string,
 
     // repo types 
-    forkIcon?: any;
     repoName?: string,
     description?: string,
     languages?: string,
@@ -22,31 +20,26 @@ type textAreaProps = {
 };
 
 const TextArea: React.FunctionComponent<textAreaProps> = ({
-    title, tech, responsability, jobTitle, techsTitle, respTitle,
-    forkIcon, repoName, description, languages, returnRepo, returnDescription,
-    returnLanguages, fixWidth, children }) => {
+    title, tech, responsability, job, techsTitle, respTitle,
+     repoName, description, languages, returnRepo, returnDescription,
+    returnLanguages, children }) => {
 
     return (
-        <div className="container" style={fixWidth}>
-            <div className="fork-icon">
-                    <img src={forkIcon && icon } alt="" />
-                </div>
-            <div className="content">
-                <div className="job-title">
-                    <h2>{title || repoName}</h2>
-                    <p>{jobTitle || returnRepo}</p>
-                </div>
-                <div className="techs-title">
-                    <h2>{tech || languages}</h2>
-                    <p>{techsTitle || returnLanguages}</p>
-                </div>
-                <div className="responsabilities-title">
-                    <h2>{responsability || description}</h2>
-                    <p>{respTitle || returnDescription}</p>
-                </div>
+        <>
+            <div className="text-area">
+                <h2>{title || repoName}</h2>
+                <p>{job || returnRepo}</p>
+            </div>
+            <div className="text-area">
+                <h2>{techsTitle || languages}</h2>
+                <p>{tech || returnLanguages}</p>
+            </div>
+            <div className="text-area">
+                <h2>{respTitle || description}</h2>
+                <p>{responsability || returnDescription}</p>
             </div>
             {children}
-        </div>
+        </>
     )
 };
 

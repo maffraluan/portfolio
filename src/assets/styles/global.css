@@ -1,11 +1,16 @@
 :root {
-    --color-background: #6C91C2;
-    --color-background-light: #C3C9E9;
+    --color-background: #f6f6f6;
+    --color-background-dark-light: #f1e7e7;
+    --color-background-dark: #cde8f2;
     --color-navbar: #373F47;
-    --color-text-dark: #373F47;
-    --color-text-light: #C3C9E9;
+    --color-text-dark: #655d5d;
+    --color-text-light: #f1e7e7;
 
     font-size: 60%;
+}
+
+.bg-dark-light {
+    background-color: var(--color-background-dark-light);
 }
 
 * {
@@ -14,17 +19,19 @@
     box-sizing: border-box;
 }
 
+li {
+    min-width: 30vw;
+    margin: 3.2rem;
+    list-style: none;
+}
+
 body {
     background: var(--color-background);
 }
 
-html, body, #root {
-    height: 100vh;
-}
-
-body, textarea {
-    font: 500 1.6rem Roboto;
-    color: var(--color-navbar);
+a {
+    color: var(--color-text-dark);
+    font: 500 1.8rem 'Raleway', sans-serif;
 }
 
 #root {
