@@ -7,7 +7,6 @@
 
   - ReactJs
   - Typescript
-  - React Navigation
   - React Router Dom
 
 ### Installation
