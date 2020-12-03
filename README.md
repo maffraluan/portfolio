@@ -1,11 +1,11 @@
-<h1 align="center">Hi 👋, I'm Luan</h1>
+<h1 align="center">Howya! I'm Luan</h1>
 <h3 align="center">A love create things and 'unfinished' it. hahaha</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=maffraluan&label=Profile%20views&color=0e75b6&style=flat" alt="maffraluan" /> </p>
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=maffraluan" alt="maffraluan" /></a> </p>
 
-- 🔭 I’m currently working on **Code Community <Private Code>**
+- 🔭 I’m currently working on **Code Community < Private Code >**
 
 - 🌱 I’m currently learning **Javacript ecosystem. TypeScript, a little of backend, C# sometimes.**
 
